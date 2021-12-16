@@ -1,11 +1,16 @@
 import React from 'react'
 
-function TodoItem() {
+function TodoItem({todo}) {
     return (
         <div>
-            <h3>
-                todo.title
-            </h3>
+            <h4>
+                {todo.title}
+            </h4>
+            <p>
+                {todo.desc}
+            </p>
+            <button type="button" class="btn btn-danger">Delete</button>
+        
         </div>
     )
 }
